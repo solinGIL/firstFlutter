@@ -8,7 +8,7 @@ void main() {
   try {
    someError();
   } catch (e) {
-    print('런타임 에러 발생.');
+    print('0');
   }
 
 }
