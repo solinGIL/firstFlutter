@@ -22,7 +22,7 @@ void main() async {
   // 인자에 보냄 source = sample.csv | target = sample_copy.csv | find = 한석봉 | replace = 김석봉
   await findAndReplace('lib/비동기프로그래밍/sample.csv', 'lib/비동기프로그래밍/sample_copy.csv', '한석봉', '김석봉')
       .catchError((error) {
-    print('파일 처리 중 오류가 발생했습니다: $error');
+    print(error);
   });
 
   print(await File('sample_copy.csv').readAsString()); // 카피한 파일을 읽어줌.
